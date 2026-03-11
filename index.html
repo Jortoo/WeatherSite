@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weer App</title>
+    <link rel="stylesheet" href="Style/style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="content-container">
+            <h2>Weer App</h2>
+            <div class="content">
+                <div class="content-top">
+                    <h3 id="location-title">- -</h3>
+                    <h4 id="date">0/0/0</h4>
+                </div>
+                <img src="Images/none.png" alt="No image" id="plaatje" width="50px">
+                <h2 id="graden">- - °C</h2>
+            </div>
+            <div class="extra-info">
+                <div class="voelt-als">
+                    <h4>Voelt als</h4>
+                    <p id="voelt-als">- - °C</p>
+                </div>
+                <div class="wind">
+                    <h4>Wind km/u</h4>
+                    <p id="wind">- - km/u</p>
+                </div>
+                <div class="regenkans">
+                    <h4>Regen Kans</h4>
+                    <p id="regenkans">- - %</p>
+                </div>
+            </div>
+            <div class="search-bar">
+                <h2>Locatie</h2>
+                <input type="text" name="location" id="location" placeholder="Type een stad">
+            </div>
+        </div>
+        <div class="vooruitzicht">
+            <h2>7 daagse vooruitzicht</h2>
+            <div class="vooruitzicht-container">
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="Scripts/script.js"></script>
+</body>
+</html>
