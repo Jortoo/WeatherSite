@@ -1,6 +1,4 @@
-require("dotenv").config();
-
-const api_key = process.env.API_KEY;
+const api_key = "";
 
 function getWeatherByCoords(lat, lon) {
     fetch(`https://api.weatherapi.com/v1/forecast.json?key=${api_key}&q=${lat},${lon}&days=7`)
