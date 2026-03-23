@@ -28,11 +28,23 @@ function returnDate() {
 
 }
 
+function returnUV(uv) {
+
+    if (uv <= 2) return "Laag";
+    else if (uv <= 5) return "Matig";
+    else if (uv <= 7) return "Hoog";
+    else if (uv <= 10) return "Zeer hoog";
+    else return "Extreem";
+
+}
+
 function updateUI(data) {
 
     document.getElementById("date").textContent = returnDate();
     document.getElementById("location-title").textContent = data.location.name;
     document.getElementById("graden").textContent = data.current.temp_c + "°C";
+    var uv = data.current.uv;
+    document.getElementById("uv-index").textContent = uv + " UV (" + returnUV(uv) + ")";
     document.getElementById("plaatje").src = "https:" + data.current.condition.icon;
     document.getElementById("voelt-als").textContent = data.current.feelslike_c + "°C";
     document.getElementById("wind").textContent = data.current.wind_kph + " km/u";
